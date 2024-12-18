@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Z</span>edrix <span>C</span>orpuz</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>You can call me <span></span></h1>
+        <h1> Mr. D3Z <span></span></h1>
+        <h2>Computer Engineer</h2>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+ 
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects-container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      <div class="service-cards">
+        <div class="service-card">
+          <h3>Project 1</h3>
+          <p>The first webpage I created was dedicated to offering a Mobile Legends Rank Boosting Service. 
+            It aimed to help players improve their ranks in the popular mobile game by providing expert assistance 
+            and strategies. This marked my initial foray into web development, combining both design and 
+            functionality to cater to a specific gaming audience.</p>
+          <a class="button" href="javascript:void(0)" onclick="openModal(1)">Show Project</a>
+        </div>
+        <div class="service-card">
+          <h3>Project 2</h3>
+          <p>My first online banking application, named Apex Bank, was a significant milestone in my development journey.
+             It was designed to provide users with a seamless and secure banking experience, offering features such as
+              account management, fund transfers, and bill payments. This project allowed me to apply my skills in user 
+              interface design and backend integration to create a functional and reliable digital banking solution.</p>
+          <a class="button" href="javascript:void(0)" onclick="openModal(2)">Show Project</a>
+        </div>
+        <div class="service-card">
+          <h3>Project 3</h3>
+          <p>The first To-Do List app I created was a simple yet effective tool designed to help users manage their 
+            tasks and stay organized. It allowed users to add, edit, and delete tasks, set deadlines, and mark tasks 
+            as completed. This project was a great introduction to developing applications with user-friendly interfaces
+            and basic functionality, providing a solid foundation for my app development skills.</p>
+          <a class="button" href="javascript:void(0)" onclick="openModal(3)">Show Project</a>
+        </div>
+        <div class="service-card">
+          <h3>Project 4</h3>
+          <p>The first calculator app I created in Android Studio was a fundamental project that helped me understand
+             the basics of mobile app development. The app featured simple arithmetic operations, including addition,
+              subtraction, multiplication, and division, with a clean and user-friendly interface. This project allowed 
+              me to gain experience in UI design, handling user input, and implementing basic functionality in Android
+               Studio.</p>
+          <a class="button" href="javascript:void(0)" onclick="openModal(4)">Show Project</a>
+        </div>
+        <div class="service-card">
+          <h3>Project 5</h3>
+          <p>The first Barricade Avoidance Robot I created is my first robot autonomous device built to navigate its surroundings 
+             avoiding obstacles. It features sensors for real-time detection and a microcontroller for processing 
+             decisions, enabling it to find clear paths efficiently. This project highlights my skills in robotics,
+              sensor integration, and algorithm design, demonstrating a practical application of automation technology.</p>
+          <a class="button" href="javascript:void(0)" onclick="openModal(5)">Show Project</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-images"></div>
+    </div>
+  </div>
+  
+  
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/profilepic.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+      
+        <h2>Future Application Developer</h2>
+       
+        <p>I am Zedrix Kennedy Corpuz, a 4th-year BS Computer Engineering student with a strong passion for technology and software
+           development. I aspire to become a skilled application developer, creating innovative and efficient solutions that can make
+            a difference in people's lives. I am a dedicated learner, always seeking opportunities to improve my skills and stay updated
+             with the latest trends in technology. My goal is to contribute to a dynamic team where I can grow as a professional while 
+             delivering valuable solutions as an application developer.</p>
+        <a onclick="window.open('./img/Resume_ZedC.pdf')" class="cta">View Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+960 333 7500</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>kennedycorpuz05@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Sto.Cristo, Mexico, Pampanga</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Z</span>edrix <span>C</span>orpuz</h1>
+      </div>
+      <h2>Your Application Developer </h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/profile.php?id=100092538856174"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/zedyyy.zxc/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+
+
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
